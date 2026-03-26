@@ -1,2 +1,0 @@
-# BasicScript
-First Repo
