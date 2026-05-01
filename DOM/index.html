@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black">
+        <h1 class="heading">Dom learning on chai aur code</h1>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+        <button id="btn">Click Me!!</button>
+    </div>
+</body>
+<script>
+    let heading = document.querySelector('.heading')
+    let para = document.querySelector('.para')
+    let buttn = document.getElementById('btn')
+
+    buttn.addEventListener('click', () => {
+        if (heading.textContent === "I'm clicked!!") {
+            heading.textContent = "Dom learning on chai aur code"
+            para.textContent = "Lorem ipsum dolor sit amet."
+        }
+        else{
+            heading.textContent = "I'm clicked!!"
+            para.textContent = "I'm clicked!!"
+        }
+    })
+</script>
+
+</html>
