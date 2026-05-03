@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG-CHANGER</title>
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            /* gap: 2rem; */
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .grey{
+            background-color: grey;
+        }
+        .yellow{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="green" class="button green">Green</div>
+        <div id="yellow" class="button yellow">Yellow</div>
+        <div id="grey" class="button grey">Grey</div>
+        <div id="blue" class="button blue">Blue</div>
+    </div>
+    <script type="module" src="bg-changer.js"></script>
+</body>
+
+</html>
