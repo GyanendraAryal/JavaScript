@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #000000; color: #ffff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <script>
+        // function addLang(langName){
+        //     const li = document.createElement('li')
+        //     li.innerHTML = `${langName}`
+        //     document.querySelector('.language').
+        //     appendChild(li)
+        // }
+        // addLang("python")
+        // addLang("typescript")
+        // addLang("java")
+        // addLang("rust")
+
+        function addOptiLang(langName) {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').
+                appendChild(li)
+        }
+        addOptiLang('lost')
+        addOptiLang('from')
+        addOptiLang('the boys')
+        //Editing the Values
+        const secondLang = document.querySelector('li:nth-child(2)')
+        const newLi = document.createElement('li')
+        newLi.textContent = 'mojo'
+        secondLang.replaceWith(newLi)
+
+        //Editing first value
+        const firstLang = document.querySelector('li:first-child')
+        const newEle = document.createElement('li')
+        newEle.textContent = 'TypeScript'
+        firstLang.replaceWith(newEle)
+
+        //Removing Element
+        const lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+
+    </script>
+</body>
+
+</html>
